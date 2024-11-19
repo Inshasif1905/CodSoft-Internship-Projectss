@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Portfolio</title>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: white;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(206, 87, 106);
+      
+      color:white;
+      padding: 20px;
+      
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2em;
+      color: black;
+      background-color: rgb(206, 87, 106);
+    }
+   
+    .skills-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      background-color: pink;
+    }
+    .skill-category {
+      width: 100%;
+      max-width: 800px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .skill-category h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: black;
+      background-color: white;
+    }
+    .skill {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .skill-title {
+      font-weight: 500;
+      color: black;
+    }
+    .progress-bar {
+      width: 70%;
+      height: 8px;
+      background-color: #e0e0e0;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background-color: #4CAF50;
+      border-radius: 4px;
+    }
+    .progress-bar {
+  position: relative;
+}
+
+.progress-bar::after {
+  content: attr(data-level);
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2px 5px;
+  background-color: black;
+  color: white;
+  font-size: 0.8em;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.progress-bar:hover::after {
+  opacity: 1;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+  <h2>My Skills</h2>
+  
+  <div class="skills-section">
+    
+   
+    <div class="skill-category">
+      <h3>Technical Skills</h3>
+      
+      <div class="skill">
+        <span class="skill-title">HTML/CSS</span>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" style="width: 100%;"></div>
+        </div>
+      </div>
+      
+      <div class="skill">
+        <span class="skill-title">JavaScript</span>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" style="width: 80%;"></div>
+        </div>
+      </div>
+      
+      <div class="skill">
+        <span class="skill-title">React</span>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" style="width: 75%;"></div>
+        </div>
+      </div>
+      
+      <div class="skill">
+        <span class="skill-title">Python</span>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" style="width: 85%;"></div>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="skill-category">
+      <h3>Soft Skills</h3>
+      
+      <div class="skill">
+        <span class="skill-title">Communication</span>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" style="width: 60%;"></div>
+        </div>
+      </div>
+      
+      <div class="skill">
+        <span class="skill-title">Teamwork</span>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" style="width: 40%;"></div>
+        </div>
+      </div>
+      
+      <div class="skill">
+        <span class="skill-title">Problem-Solving</span>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" style="width: 85%;"></div>
+        </div>
+      </div>
+      
+      <div class="skill">
+        <span class="skill-title">Time Management</span>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" style="width: 88%;"></div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+
+  
+
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const progressBars = document.querySelectorAll(".progress-bar-fill");
+
+    progressBars.forEach(bar => {
+      const width = bar.style.width;
+      bar.style.width = "0";
+      
+      setTimeout(() => {
+        bar.style.transition = "width 1s";
+        bar.style.width = width;
+      }, 100);
+    });
+  });
+</script>
+
+
+
+</html>

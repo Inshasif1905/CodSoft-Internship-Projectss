@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        body {
+            background-color: rgb(206, 87, 106);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-photo {
+            width: 151px;
+            height: 190px;
+            border-radius: 20%;
+            object-fit: cover;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        .about,
+        .skills,
+        .contact {
+            margin-bottom: 20px;
+        }
+
+        .skills ul {
+            list-style-type: none;
+        }
+
+        .skills li {
+            padding: 5px 0;
+        }
+
+        .contact a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="profile">
+            <img src="img/about.jpeg" alt="Your Photo" class="profile-photo">
+            <h1>Hello, I'm Insha Siddiqui</h1>
+            <b>
+                <p>Welcome to my About Me page!</p>
+            </b>
+        </section>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <ul>
+                <li>I'm a Web Developer, passionate about Coding and Making Website.</li>
+                <li>I enjoy reading books in my spare time and doing coding</li>
+                <li>Love to learn about cloud and all the technologies related to it</li>
+                <li> I am currently pursuing my degree in computer science with specialisation in cloud computing and
+                    would like to pursue my carrer in this only .</li>
+            </ul>
+
+        </section>
+
+        <section class="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>Full Stack Web development</li>
+                <li>My SQL</li>
+                <li>Microsoft Azure</li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   
+    <nav class="navbar">
+        <div class="logo">Luxe & Bloom</div>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#booking">Book an Appointment</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <button onclick="scrollToSection('booking')">Book Now</button>
+    </nav>
+    
+    
+    <section class="hero">
+        <h1>Where Beauty Meets <span>Perfection</span></h1>
+        <p>Your Beauty. Our Passion. Book an appointment today.</p>
+        <button onclick="scrollToSection('booking')">Book Now</button>
+    </section>
+
+  
+    <section id="service" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Hair Styling</h3>
+                <p>Transform your look with expert hair styling.</p>
+            </div>
+            <div class="card">
+                <h3>Manicure and Pedicure</h3>
+                <p>Relax and beautify your hands and feet.</p>
+            </div>
+            <div class="card">
+                <h3>Facials</h3>
+                <p>Rejuvenate your skin with our specialized facials.</p>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial">
+                <p>"The best salon experience I've ever had!" - Vishakha S.</p>
+            </div>
+            <div class="testimonial">
+                <p>"Professional and friendly staff, highly recommended!" - Lisa P.</p>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="booking" class="booking">
+        <h2>Book an Appointment</h2>
+        <form id="bookingForm">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Service" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="confirmationMessage"></p>
+    </section>
+
+    
+    <footer id="contact">
+        <p>Contact Us: 0755-46789 | luxe&bloom@gmail.com</p>
+        <p>Follow Us:</p>
+        <div class="social-media">
+            <a href="www.facebook.com">Facebook</a>
+            <a href="www.instagram.com">Instagram</a>
+            <a href="www.twitter.com">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
